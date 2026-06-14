@@ -190,7 +190,7 @@ function leaderPOP() {
         not.textContent = 'No records yet!';
         
         let note = document.createElement('p');
-        note.style.cssText = "color: var(--primary); padding: 12px; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 15px 0 0; border-left: 5px solid var(--primary); background:rgba(255,255,255,0.05); text-align: left;";
+        note.style.cssText = "color: var(--primary); padding: 12px; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 15px 0 0; border-left: 5px solid var(--primary); background:rgba(255,255,255,0.05); text-align:center;";
         
         let inNote = document.createElement('i');
         inNote.className = 'fa-solid fa-circle-info';
