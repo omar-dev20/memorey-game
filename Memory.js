@@ -370,7 +370,7 @@ allcard.forEach((card) => {
                 new Audio('https://www.myinstants.com/media/sounds/awwhhh-sound-effect.mp3').play();
             }
         }
-        if(wrong === 25){
+        if(wrong === 10){
                popfail ();
             }
     });
