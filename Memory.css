@@ -148,7 +148,7 @@ bottom: 10px;
 @media (max-width: 767px) {
   .memory-game-blocks{
     display: grid;
-    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
   }
   .memory-game-blocks .game-block {
     flex: 1 0 calc(50% - 20px); 
