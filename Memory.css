@@ -117,6 +117,7 @@ bottom: 10px;
   width: 85%;
   margin: 20px auto;
 }
+
 .memory-game-blocks.no-clicking {
   pointer-events: none;
 }
@@ -146,6 +147,10 @@ bottom: 10px;
 }
 
 @media (max-width: 767px) {
+  .memory-game-blocks{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
   .memory-game-blocks .game-block {
     flex: 1 0 calc(50% - 20px); 
     height: 150px; 
