@@ -351,7 +351,7 @@ allcard.forEach((card) => {
                 correct.push(firstflip); 
                 flippedCards = [];
                 new Audio('https://www.myinstants.com/media/sounds/kids_cheering.mp3').play();
-             if (correct.length ===10) {
+             if (correct.length ===6) {
                     createWinPop();
                 }
             } else {
