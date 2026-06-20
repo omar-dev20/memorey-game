@@ -55,7 +55,7 @@ async function icon() {
     const allIcons = [...googleIcons, ...biIcons, ...faIcons];
     container.forEach(e => e.innerHTML = "");
     let chosenIcons = [];
-    while (chosenIcons.length < 7) {
+    while (chosenIcons.length < 6) {
         const randomIcon = allIcons[Math.floor(Math.random() * allIcons.length)];
         if (!chosenIcons.includes(randomIcon)) {
             chosenIcons.push(randomIcon);
