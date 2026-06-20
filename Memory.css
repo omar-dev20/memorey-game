@@ -111,10 +111,10 @@ bottom: 10px;
   
 }
 .memory-game-blocks {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   position: relative;
   width: 85%;
-  flex-wrap: wrap;
   margin: 20px auto;
 }
 .memory-game-blocks.no-clicking {
