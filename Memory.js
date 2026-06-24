@@ -134,7 +134,7 @@ name.addEventListener('mouseenter', () => {
 });
 
 function saveUser(user, time, tries) {
-    let leaders = JSON.parse(localStorage.getItem('leaders')) || [];
+    let leaders = JSON.parse(localStorage.getItem('leader')) || [];
     let result = {
         name: user.trim(),
         time: time,
@@ -156,7 +156,7 @@ function saveUser(user, time, tries) {
     leaders.sort((a, b) => a.time - b.time);
     leaders = leaders.slice(0, 5);
     
-    localStorage.setItem('leaders', JSON.stringify(leaders));
+    localStorage.setItem('leader', JSON.stringify(leaders));
 }
 let leaderclose = document.createElement("button");
 leaderclose.appendChild(document.createTextNode("X"));
@@ -165,7 +165,7 @@ function leaderPOP() {
     let overlay = document.createElement("div");
     overlay.style.cssText = "position:fixed; inset:0; background:rgba(0, 0, 0, 0.6); z-index:9998; backdrop-filter:blur(5px);";
 
-    let leaders = JSON.parse(localStorage.getItem('leaders')) || [];
+    let leaders = JSON.parse(localStorage.getItem('leader')) || [];
     let popup = document.createElement("div");
     popup.className = 'leader-popup';
     popup.style.cssText = "z-index:9999; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); backdrop-filter:blur(15px); background:rgba(255,255,255,0.1); padding:30px; text-align:center; border-radius:15px; color:var(--text, white); border:1px solid var(--primary); width:450px; max-width:97%; box-shadow: var(--box-shadow);";
