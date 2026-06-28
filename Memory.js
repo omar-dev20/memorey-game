@@ -426,12 +426,16 @@ function createWinPop() {
         inputContainer.appendChild(submitBtn);
         popup.appendChild(inputContainer);
 
-        submitBtn.addEventListener("click", function () {
-            if (userInput.value.trim() === '') return;
-            if (typeof saveUser === 'function') {
-                saveUser(userInput.value, counterIndex, wrong);
-            }
-        });
+submitBtn.addEventListener("click", function () {
+    if (userInput.value.trim() === '') return;
+    if (typeof saveUser === 'function') {
+        saveUser(userInput.value, counterIndex, wrong);
+    }
+    popup.remove();
+    overlay.remove();
+    document.body.style.overflow = "auto";
+    location.reload(); 
+});
     }
 
     popup.appendChild(failclose);
