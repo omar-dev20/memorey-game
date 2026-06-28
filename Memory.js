@@ -144,7 +144,7 @@ function saveUser(user, time, tries) {
     let userIndex = leaders.findIndex(u => u.name === result.name);
 
     if (userIndex !== -1) {
-        if (result.time < leaders[userIndex].time) {
+        if (result.time < leaders[userIndex].time || result.time === leaders[userIndex].time && result.wrong <=leaders[userIndex].wrong ) {
             leaders[userIndex] = result;
         } 
         else if (result.time === leaders[userIndex].time && result.wrong < leaders[userIndex].wrong) {
